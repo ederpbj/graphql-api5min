@@ -1,0 +1,26 @@
+begin;
+
+insert into user_account (id, username, password, name, email) values
+  (1, 'johnsmith','1234','John Smith', 'john.smith@email.com'),
+  (2, 'sara', '1234', 'Sara Smith', 'sara.smith@email.com'),
+  (3, 'budd', '1234','Budd Deey', 'budd.deey@email.com'),
+  (4, 'kathryn','1234','Kathryn Ramirez', 'kathryn.ramirez@email.com'),
+  (5, 'joe','1234','Joe Tucker', 'joe.tucker@email.com'),
+  (6, 'jaydson','1234','Jaydson Gomes', 'jaydson@nasc.io');
+
+insert into post (id, user_id, title, content) values
+  (1, 6, 'Meu primeiro post','Loren Ipsun Dolor 1'),
+  (2, 6, 'Meu segundo post','Loren Ipsun Dolor 2'),
+  (3, 6, 'Meu terceiro post','Loren Ipsun Dolor 3'),
+  (4, 6, 'Meu quarto post','Loren Ipsun Dolor 4'),
+  (5, 6, 'Meu quinto post','Loren Ipsun Dolor 5');
+
+insert into comment (id, post_id, user_id, content) values
+  (1, 1, 1, 'Muito legal esse post'),
+  (2, 1, 2, 'Verdade, muito legal!'),
+  (3, 1, 3, 'Eu achei mais ou menos'),
+  (4, 2, 1, 'Muito bom!'),
+  (5, 2, 5, 'Show'),
+  (6, 4, 4, 'Interessante o post!');
+
+commit;

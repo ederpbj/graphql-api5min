@@ -1,0 +1,27 @@
+{
+  "name": "graphql-api5min",
+  "version": "1.0.0",
+  "description": "APi graphql em 5 min",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "postgraphql -c postgres://$PG_USER:$PG_PASS@$PG_HOST:$PG_PORT/$PG_DBNAME",
+    "build": "node public/api/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ederpbj/graphql-api5min.git"
+  },
+  "author": "Eder Pires",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ederpbj/graphql-api5min/issues"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "homepage": "https://github.com/ederpbj/graphql-api5min#readme",
+  "dependencies": {
+    "postgraphql": "^3.5.6"
+  }
+}
